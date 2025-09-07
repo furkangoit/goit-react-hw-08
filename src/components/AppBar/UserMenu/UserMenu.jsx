@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { selectUser } from '../../redux/auth/selectors';
-import { logOut } from '../../redux/auth/operations';
-import { clearContacts } from '../../redux/contacts/slice';
+import { selectUser } from '../../../redux/auth/selectors'; // Doğru yol: 3 seviye yukarı
+import { logOut } from '../../../redux/auth/operations'; // Doğru yol: 3 seviye yukarı
+import { clearContacts } from '../../../redux/contacts/slice'; // Doğru yol: 3 seviye yukarı
 
 const UserMenu = () => {
     const dispatch = useDispatch();
