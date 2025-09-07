@@ -4,14 +4,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import { refreshUser } from './redux/auth/operations';
 import { selectIsRefreshing } from './redux/auth/selectors';
 
-// DÜZELTME: Mevcut Layout dosyasının yolunu kullan
+// Mevcut dosya yapınıza göre düzeltilmiş import yolları
 import Layout from './components/AppBar/Layout/Layout';
 import Home from './pages/Home';
 import Contacts from './pages/Contacts';
 import Registration from './pages/Registration';
 import Login from './pages/Login';
-import PrivateRoute from './components/PrivateRoute/PrivateRoute';
-import RestrictedRoute from './components/RestrictedRoute/RestrictedRoute';
+import PrivateRoute from './components/AppBar/PrivateRoute/PrivateRoute';
+import RestrictedRoute from './components/AppBar/RestrictedRoute/RestrictedRoute';
 
 import './App.css';
 
