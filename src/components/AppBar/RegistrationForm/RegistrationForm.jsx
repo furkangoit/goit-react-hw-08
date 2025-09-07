@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { useDispatch } from 'react-redux';
-import { register } from '../../../redux/auth/operations'; // Doğru yol: 3 seviye yukarı
+import { register } from '../../../redux/auth/operations';
 import css from './RegistrationForm.module.css';
 
 const RegistrationForm = () => {

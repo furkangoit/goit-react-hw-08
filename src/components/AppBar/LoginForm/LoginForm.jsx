@@ -1,7 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { useDispatch } from 'react-redux';
-import { logIn } from '../../../redux/auth/operations'; // Doğru yol: 3 seviye yukarı
+import { logIn } from '../../../redux/auth/operations';
 import css from './LoginForm.module.css';
 
 const LoginForm = () => {

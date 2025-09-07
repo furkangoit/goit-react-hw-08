@@ -1,11 +1,9 @@
-
 import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-
 axios.defaults.baseURL = 'https://connections-api.goit.global/';
 
-// Yardımcı: Header’a token ekle
+// Yardımcı: Header'a token ekle
 const setAuthHeader = token => {
     axios.defaults.headers.common.Authorization = `Bearer ${token}`;
 };
