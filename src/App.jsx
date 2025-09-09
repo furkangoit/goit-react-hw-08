@@ -4,12 +4,12 @@ import { useDispatch, useSelector } from 'react-redux';
 import { refreshUser } from './redux/auth/operations';
 import { selectIsRefreshing } from './redux/auth/selectors';
 
-// Mevcut dosya yapınıza göre düzeltilmiş import yolları
+// Güncellenmiş import yolları
 import Layout from './components/AppBar/Layout/Layout';
-import Home from './pages/Home';
-import Contacts from './pages/Contacts';
-import Registration from './pages/Registration';
-import Login from './pages/Login';
+import Home from './pages/Home/Home';
+import ContactsPage from './pages/ContactsPage/ContactsPage';
+import RegistrationPage from './pages/RegistrationPage/RegistrationPage';
+import LoginPage from './pages/LoginPage/LoginPage';
 import PrivateRoute from './components/AppBar/PrivateRoute/PrivateRoute';
 import RestrictedRoute from './components/AppBar/RestrictedRoute/RestrictedRoute';
 
@@ -33,7 +33,7 @@ function App() {
           path="/register"
           element={
             <RestrictedRoute>
-              <Registration />
+              <RegistrationPage />
             </RestrictedRoute>
           }
         />
@@ -41,7 +41,7 @@ function App() {
           path="/login"
           element={
             <RestrictedRoute>
-              <Login />
+              <LoginPage />
             </RestrictedRoute>
           }
         />
@@ -49,7 +49,7 @@ function App() {
           path="/contacts"
           element={
             <PrivateRoute>
-              <Contacts />
+              <ContactsPage />
             </PrivateRoute>
           }
         />

@@ -1,4 +1,4 @@
-import SearchBox from "../../SearchBox/SearchBox";
+import SearchBox from "../SearchBox/SearchBox";
 
 const Filter = () => {
     return (

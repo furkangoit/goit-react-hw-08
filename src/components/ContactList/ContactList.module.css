@@ -1,0 +1,40 @@
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background: white;
+    border: 1px solid #e0e7ff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s;
+}
+
+.listItem:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactInfo {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.name {
+    font-weight: 600;
+    color: #3867d6;
+}
+
+.number {
+    color: #666;
+}
