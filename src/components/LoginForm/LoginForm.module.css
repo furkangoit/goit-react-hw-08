@@ -5,6 +5,15 @@
     align-items: center;
 }
 
+.label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 220px;
+    font-weight: 500;
+    color: #3867d6;
+}
+
 .input {
     width: 220px;
     padding: 12px;

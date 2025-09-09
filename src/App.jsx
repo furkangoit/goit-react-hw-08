@@ -5,13 +5,13 @@ import { refreshUser } from './redux/auth/operations';
 import { selectIsRefreshing } from './redux/auth/selectors';
 
 // Güncellenmiş import yolları
-import Layout from './components/AppBar/Layout/Layout';
+import Layout from './components/Layout/Layout.jsx';
 import Home from './pages/Home/Home';
 import ContactsPage from './pages/ContactsPage/ContactsPage';
 import RegistrationPage from './pages/RegistrationPage/RegistrationPage';
 import LoginPage from './pages/LoginPage/LoginPage';
-import PrivateRoute from './components/AppBar/PrivateRoute/PrivateRoute';
-import RestrictedRoute from './components/AppBar/RestrictedRoute/RestrictedRoute';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import RestrictedRoute from './components/RestrictedRoute/RestrictedRoute';
 
 import './App.css';
 

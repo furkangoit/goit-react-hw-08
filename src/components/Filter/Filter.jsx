@@ -1,9 +1,10 @@
 import SearchBox from "../SearchBox/SearchBox";
+import styles from "./Filter.module.css";
 
 const Filter = () => {
     return (
-        <div>
-            <h2>Filter Contacts</h2>
+        <div className={styles.container}>
+            <h2 className={styles.title}>Filter Contacts</h2>
             <SearchBox />
         </div>
     );

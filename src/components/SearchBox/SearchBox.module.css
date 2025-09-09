@@ -21,9 +21,14 @@
     background: white;
     color: #3867d6;
     transition: border-color 0.2s;
+    box-sizing: border-box;
 }
 
 .input:focus {
     border-color: #a8edea;
     outline: none;
+}
+
+.input::placeholder {
+    color: #a0a0a0;
 }

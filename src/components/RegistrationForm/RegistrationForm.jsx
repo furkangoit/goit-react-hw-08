@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { useDispatch } from 'react-redux';
-import { register } from '../../../redux/auth/operations';
-import css from './RegistrationForm.module.css';
+import { register } from '../../redux/auth/operations';
+import styles from './RegistrationForm.module.css';
 
 const RegistrationForm = () => {
     const dispatch = useDispatch();
@@ -26,33 +26,33 @@ const RegistrationForm = () => {
     return (
         <div>
             {success && (
-                <div className={css.success}>Kayıt başarılı!</div>
+                <div className={styles.success}>Kayıt başarılı!</div>
             )}
             <Formik
                 initialValues={{ name: '', email: '', password: '' }}
                 validationSchema={validationSchema}
                 onSubmit={handleSubmit}
             >
-                <Form className={css.form}>
-                    <label>
+                <Form className={styles.form}>
+                    <label className={styles.label}>
                         Name
-                        <Field type="text" name="name" className={css.input} />
-                        <ErrorMessage name="name" component="div" className={css.error} />
+                        <Field type="text" name="name" className={styles.input} />
+                        <ErrorMessage name="name" component="div" className={styles.error} />
                     </label>
 
-                    <label>
+                    <label className={styles.label}>
                         Email
-                        <Field type="email" name="email" className={css.input} />
-                        <ErrorMessage name="email" component="div" className={css.error} />
+                        <Field type="email" name="email" className={styles.input} />
+                        <ErrorMessage name="email" component="div" className={styles.error} />
                     </label>
 
-                    <label>
+                    <label className={styles.label}>
                         Password
-                        <Field type="password" name="password" className={css.input} />
-                        <ErrorMessage name="password" component="div" className={css.error} />
+                        <Field type="password" name="password" className={styles.input} />
+                        <ErrorMessage name="password" component="div" className={styles.error} />
                     </label>
 
-                    <button type="submit" className={css.button}>Register</button>
+                    <button type="submit" className={styles.button}>Register</button>
                 </Form>
             </Formik>
         </div>

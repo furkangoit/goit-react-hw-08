@@ -21,6 +21,12 @@
     transform: translateY(-1px);
 }
 
+.navLink.active {
+    background: linear-gradient(90deg, #a8edea 0%, #fed6e3 100%);
+    color: #3867d6;
+    border-color: #d1d8e0;
+}
+
 .navLink:first-child {
     background: linear-gradient(90deg, #a8edea 0%, #fed6e3 100%);
     color: #3867d6;
