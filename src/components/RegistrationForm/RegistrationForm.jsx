@@ -10,10 +10,21 @@ const RegistrationForm = () => {
     const [success, setSuccess] = useState(false);
 
     const handleSubmit = async (values, actions) => {
-        const resultAction = await dispatch(register(values));
-        if (register.fulfilled.match(resultAction)) {
-            setSuccess(true);
-            actions.resetForm();
+        console.log('Register form submitted with:', values);
+
+        try {
+            const resultAction = await dispatch(register(values));
+            console.log('Register result:', resultAction);
+
+            if (register.fulfilled.match(resultAction)) {
+                setSuccess(true);
+                actions.resetForm();
+                console.log('Registration successful!');
+            } else {
+                console.log('Registration failed:', resultAction.payload);
+            }
+        } catch (error) {
+            console.log('Registration error:', error);
         }
     };
 

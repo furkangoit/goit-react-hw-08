@@ -4,8 +4,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { refreshUser } from './redux/auth/operations';
 import { selectIsRefreshing } from './redux/auth/selectors';
 
-// Güncellenmiş import yolları
-import Layout from './components/Layout/Layout.jsx';
+// Düzeltilmiş import yolları
+import Layout from './components/Layout/Layout';
 import Home from './pages/Home/Home';
 import ContactsPage from './pages/ContactsPage/ContactsPage';
 import RegistrationPage from './pages/RegistrationPage/RegistrationPage';
